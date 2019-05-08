@@ -136,11 +136,11 @@ length = len(matrix)
 
 X_train, X_test, y_train, y_test = train_test_split(matrix, views, test_size=0.33, random_state=42)
 
-#lr=LinearRegression()#RMSE 1.06321
-#lr.fit(X_train,y_train)
-#y_pred=lr.predict(X_test)
-#print("RMSE BY LINEAR REGRESSION")
-#print(rmse(y_test,y_pred))
+lr=LinearRegression()#RMSE 1.06321
+lr.fit(X_train,y_train)
+y_pred=lr.predict(X_test)
+print("RMSE BY LINEAR REGRESSION")
+print(rmse(y_test,y_pred))
 #print("R2 Score BY LINEAR REGRESSION")
 #print(lr.score(y_test,y_pred) )
 #clf = svm.SVC(gamma='scale')
@@ -162,9 +162,9 @@ X_train, X_test, y_train, y_test = train_test_split(matrix, views, test_size=0.3
 #regr.fit(X_train,y_train)
 #y_el=regr.predict(X_test)
 #print(rmse(y_test,y_el))
-clf = LogisticRegression(random_state=0, solver='lbfgs', multi_class='multinomial').fit(X_train, y_train)
-y=clf.predict(X_test)
-print(rmse(y_test,y))
+#clf = LogisticRegression(random_state=0, solver='lbfgs', multi_class='multinomial').fit(X_train, y_train)
+#y=clf.predict(X_test)
+#rint(rmse(y_test,y))
 '''
 rf = RandomForestRegressor(max_features=2, min_samples_split=4, n_estimators=50, min_samples_leaf=2)
 gb = GradientBoostingRegressor(loss='quantile', learning_rate=0.0001, n_estimators=50, max_features='log2', min_samples_split=2, max_depth=1)
