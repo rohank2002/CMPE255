@@ -35,6 +35,8 @@ Performing analysis and predictions on YouTube video dataset.
       - TextBlob
       - Support Vector Machine (SVM)
       - Logistic Regression
+##### Note:
+As there was no seperate feature for sentiment, in the initial step, textblob was used to perform sentiment analysis on the description, tags and titles separately and a new column called sentiment was attached to the dataframe. After that, SVM and Logistic Regression were applied on the dataframe for performance evaluation. So here, the accuracy for SVM and LR are based on their performance with respect to textblob.
 
 ### Instructions to run:
 You will require Jupyter Notebook or any Python IDE with Python 3.0 or later installed to run the code. <br>
