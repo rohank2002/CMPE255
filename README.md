@@ -10,7 +10,6 @@ The data also includes a category_id field, which varies between regions. To ret
 
 For more information on specific columns in the dataset refer to the column metadata.
 We only used US, CA, GB, IN for this project. <br>
-Source: https://www.kaggle.com/datasnaek/youtube-new
 
 ### Tasks performed:
 Performing analysis and predictions on YouTube video dataset.
@@ -41,3 +40,10 @@ As there was no seperate feature for sentiment, in the initial step, textblob wa
 ### Instructions to run:
 You will require Jupyter Notebook or any Python IDE with Python 3.0 or later installed to run the code. <br>
 Change the directory of the data while loading it. 
+
+### References
+- Dataset Source: https://www.kaggle.com/datasnaek/youtube-new
+- https://github.com/megval26/Youtube-Popularity-Prediction
+- https://github.com/allenwang28/YouTube-Virality-Predictor
+- https://www.kaggle.com/bansmohit/us-youtube-eda-category-predictions
+- https://www.kaggle.com/ankkur13/sentiment-analysis-nlp-wordcloud-textblob
